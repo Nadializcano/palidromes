@@ -10,9 +10,9 @@ class Palindromes
     char[] myArray = inputWord.ToArray();
     // Console.WriteLine(myArray);
 
-    char[] myNewArray = new char[6];
+    char[] myNewArray = new char[inputWord.Length];
 
-    Array.Copy( myArray, myNewArray, 6);
+    Array.Copy( myArray, myNewArray, inputWord.Length);
 
     Array.Reverse(myNewArray);
 
